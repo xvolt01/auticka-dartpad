@@ -2,6 +2,27 @@ import 'dart:html';
 import 'dart:math' as math;
 import 'dart:collection';
 
+/* Quiconque fit d'Amour la pourtraiture
+Jean-Antoine de Baïf
+
+Quiconque fit d'Amour la pourtraiture, 
+De cet Enfant le patron ou prit il, 
+Sur qui tant bien il guida son outil 
+Pour en tirer au vray ceste peinture ?
+
+Certe il sçavoyt l'effet de sa pointure, 
+Le garnissant d'un arc non inutil :
+Bandant ses yeulx de son pinceau subtil, 
+Il demonstroit nostre aveugle nature.
+
+Tel qu'en ton coeur, ô peintre, tu l'avoys, 
+Tel qu'il te fut, tel que tu le sçavoys, 
+Telle tu as peinte au vif son image.
+
+A ton amour du tout semble le mien, 
+Fors que volage et leger fut le tien, 
+Le mien pesant a perdu son plumage.
+*/
 var redCar = new ImageElement(src: "http://www.clker.com/cliparts/n/E/6/Q/E/m/red-car-top-view-th.png?1");
 var yellowCar = new ImageElement(src: "http://s3.postimg.org/8kxz56kzj/car_icon_top_view_1474257.png?1");
 var greenCar = new ImageElement(src:"http://www.clker.com/cliparts/o/h/i/f/Y/K/red-car-top-view-th.png?1");
