@@ -5,7 +5,7 @@ import 'dart:collection';
 var redCar = new ImageElement(src: "http://www.clker.com/cliparts/n/E/6/Q/E/m/red-car-top-view-th.png?1");
 var yellowCar = new ImageElement(src: "http://s3.postimg.org/8kxz56kzj/car_icon_top_view_1474257.png?1");
 var greenCar = new ImageElement(src:"http://www.clker.com/cliparts/o/h/i/f/Y/K/red-car-top-view-th.png?1");
-const double dvePi = 2.0*math.PI;
+const double dvePi = 2.0*math.pi;
 
 Auto a,b,c,d,e;
 var auta;
@@ -21,7 +21,7 @@ class Auto {
   double orientation = 0.0; // orientation of the image itself
   double speed = 0.0;
   double angle;
-  double step = math.PI/90.0;
+  double step = math.pi/90.0;
   double minSteeringSpeed = 0.1;
   double accelerateDistance = 45.0;
   double decelarateDistance = 40.0;
@@ -34,7 +34,7 @@ class Auto {
     x = x0;
     y = y0;
     speed = 0.0;
-    angle = -math.PI/2;
+    angle = -math.pi/2;
     image = img;
     this.scale = scale;
     this.orientation = orientation;
@@ -73,9 +73,9 @@ class Auto {
     double dangle = angle - azimuth;
     
     if (dx < 0)
-      dangle += math.PI;
+      dangle += math.pi;
     dangle = normalizeAngle(dangle);
-    if (dangle <= math.PI)
+    if (dangle <= math.pi)
       steerLeft();
     else
       steerRight();
@@ -179,7 +179,7 @@ void init() {
   ctx = canvas.getContext("2d");
 
   double dx = 23.0;
-  a = new Auto(canvas.width/4*3, canvas.height/4*3, yellowCar, 0.2, math.PI/2.0);
+  a = new Auto(canvas.width/4*3, canvas.height/4*3, yellowCar, 0.2, math.pi/2.0);
   b = new Auto(a.x - dx, a.y, redCar, 0.3, 0.0);
   c = new Auto(b.x - dx, a.y, greenCar, 0.3, 0.0);
   d = new Auto(c.x - dx, a.y, redCar, 0.3, 0.0);
