@@ -3,7 +3,6 @@ import 'dart:math' as math;
 import 'dart:collection';
 
 var redCar = new ImageElement(src: "http://www.clker.com/cliparts/n/E/6/Q/E/m/red-car-top-view-th.png?1");
-var yellowCar = new ImageElement(src: "http://s3.postimg.org/8kxz56kzj/car_icon_top_view_1474257.png?1");
 var greenCar = new ImageElement(src:"http://www.clker.com/cliparts/o/h/i/f/Y/K/red-car-top-view-th.png?1");
 const double dvePi = 2.0*math.pi;
 
@@ -179,10 +178,10 @@ void init() {
   ctx = canvas.getContext("2d");
 
   double dx = 23.0;
-  a = new Auto(canvas.width/4*3, canvas.height/4*3, yellowCar, 0.2, math.pi/2.0);
-  b = new Auto(a.x - dx, a.y, redCar, 0.3, 0.0);
+   a = new Auto(canvas.width/4*3, canvas.height/4*3, redCar, 0.3, 0);
+  b = new Auto(a.x - dx, a.y, greenCar, 0.3, 0.0);
   c = new Auto(b.x - dx, a.y, greenCar, 0.3, 0.0);
-  d = new Auto(c.x - dx, a.y, redCar, 0.3, 0.0);
+  d = new Auto(c.x - dx, a.y, greenCar, 0.3, 0.0);
   e = new Auto(d.x - dx, a.y, greenCar, 0.3, 0.0);
 
 
@@ -221,3 +220,4 @@ main() {
   init();
   run();
 }
+
